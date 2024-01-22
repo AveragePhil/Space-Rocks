@@ -29,3 +29,5 @@ if(keyboard_check_pressed(vk_space))
 }
 
 move_wrap(true,true,sprite_width/2);
+
+effect_create_below(ef_flare,x,y,0.001,c_white)

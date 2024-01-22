@@ -2,6 +2,7 @@
 // You can write your code in this editor
 score += 10;
 audio_play_sound(snd_die, 1, false);
+effect_create_below(ef_explosion,x,y, 0.1, c_white)
 instance_destroy();
 
 with(other)
