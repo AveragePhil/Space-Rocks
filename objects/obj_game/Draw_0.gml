@@ -11,7 +11,7 @@ switch(room)
 		draw_set_halign(fa_center);
 		draw_text_transformed_color(
 			room_width/2, 250, "SPACE ROCKS",
-			4, 4, 270, c_yellow,c_yellow,c_red,c_red, 1
+			4, 4, 0, c_yellow,c_yellow,c_red,c_red, 1
 		);
 		draw_text(
 			room_width/2, 400,

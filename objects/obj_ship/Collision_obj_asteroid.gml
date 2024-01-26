@@ -9,6 +9,7 @@ with(obj_game)
 audio_play_sound(snd_die, 1, false);
 
 instance_destroy();
+instance_destroy(obj_barrier);
 
 repeat(10)
 {

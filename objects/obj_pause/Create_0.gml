@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-score = 0;
-lives = 3;
+pause = false;
+pauseSurf = -1;
+pauseSurfBuffer = -1;
 
-draw_set_font(fnt_text);
+resW = 800;
+resH = 800;
 
-randomize();
