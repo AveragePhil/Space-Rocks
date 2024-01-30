@@ -6,6 +6,6 @@ yy = irandom_range(0, room_height)
 
 instance_create_layer(xx,yy, "Instances", obj_powerup);
 
-alarm[2] = room_speed*10
+alarm[2] = irandom_range(600,960);
 
 
