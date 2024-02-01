@@ -19,8 +19,8 @@ if (keyboard_check_pressed(ord("F")))
 {		
 	if (!pause)
 	{
-		draw_text_transformed_color(400,400, "PAUSED", 1,1,0,c_white,c_white,c_white,c_white,1);
 		pause = true;
+		draw_text_transformed_color(400,400, "PAUSED", 4,4,0,c_white,c_white,c_white,c_white,1);
 		instance_deactivate_all(true);
 		pauseSurf = surface_create(resW, resH);
 		surface_set_target(pauseSurf);
@@ -30,6 +30,7 @@ if (keyboard_check_pressed(ord("F")))
 		if (buffer_exists(pauseSurfBuffer)) buffer_delete(pauseSurfBuffer);
 		pauseSurfBuffer = buffer_create(resW * resH * 4, buffer_fixed,1);
 		buffer_get_surface(pauseSurfBuffer, pauseSurf,0);
+
 	}
 	else
 	{
